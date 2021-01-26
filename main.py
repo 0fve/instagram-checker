@@ -8,7 +8,7 @@ class Start:
     b = []
     SPACING = 23
     start_time = time.time()
-    URL = f"https://www.snapchat.com/"
+    URL = f"https://www.instagram.com/"
     def link(self):
         start_time = time.time()
         print("\033[1;33;40m ","""
@@ -22,7 +22,7 @@ class Start:
             try:
                 while True:
                     self.lines = f.readline().strip()
-                    self.req = requests.get(f"https://www.tiktok.com/@{self.lines}?lang=ar")
+                    self.req = requests.get(f"https://www.instagram.com/{self.lines}")
                     if self.lines == '':
                         f.strip('\n')
                         f.close()
